@@ -1,12 +1,16 @@
 require 'sinatra'
 require 'sinatra/json'
+require './init_db.rb'
+
+class Bump < Sequel::Model
+end
 
 configure do
   set server: ['thin', 'webrick']
 end
 
 get '/' do
-  'Test API'
+  json api: '0.1'
 end
 
 # TODO:save data to db
