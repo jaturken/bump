@@ -3,7 +3,6 @@ require 'sinatra/json'
 require './db.rb'
 require './models.rb'
 require './lib/bump_processor.rb'
-require 'pry'
 
 configure do
   set server: ['thin', 'webrick']
