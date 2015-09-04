@@ -19,7 +19,7 @@ end
 
 get '/last_bump' do
   bump = Bump.last
-  data = ['Last bump:', bump.values.to_s,  "Its socials:"] + bump.socials.map(&:values).map(&:to_s)
+  data = ['Last bump:', bump.values,  "Its socials:"] + bump.socials.map(&:values)
   data.join("<br>\n")
 end
 
