@@ -3,7 +3,7 @@ Sequel.migration do
     create_table(:bumps) do
       primary_key :id
       Integer :event_id, null: false
-      Time :time, null: false
+      Bignum :time, null: false
       String :push_token, size: 60, null: false, default: ''
       Float :latitude, null: false
       Float :longtitude, null: false

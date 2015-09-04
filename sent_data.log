@@ -5,3 +5,28 @@
 {"param1"=>"value15", "param2"=>"value16"}
 {"param1"=>"value15", "param2"=>"value16"}
 {"param1"=>"value15", "param2"=>"value16"}
+{}
+{"{"=>"", "\"socials\""=>"[", "\"name\""=>"\"vk\",", "\"token\""=>"\"dewq4rc234r24cr43tc5t43c25t345tc445tc345\"", "}"=>"", ","=>"", "\"event_id\""=>"5,", "\"time\""=>"1233245432534,", "\"push_token\""=>"\"huwneiorgyu2jc890t8092348c9057438t9c07345890ct78590347890\",", "\"loc\""=>"\"23.43552;57.23525\""}
+{}
+{}
+{}
+{}
+{}
+{}
+{"param1"=>"lol", "param2"=>"wut"}
+{}
+{}
+{}
+{"{\\\"socials\\\":"=>{"{\\\"name\\\":\\\"vk\\\",\\\"token\\\":\\\"dewq4rc234r24cr43tc5t43c25t345tc445tc345\\\"}"=>{",\\\"event_id\\\":5,\\\"time\\\":1233245432534,\\\"push_token\\\":\\\"huwneiorgyu2jc890t8092348c9057438t9c07345890ct78590347890\\\",\\\"loc\\\":\\\"23.43552;57.23525\\\"}"=>nil}}}
+{"{\\\"socials\\\":"=>{"{\\\"name\\\":\\\"vk\\\",\\\"token\\\":\\\"dewq4rc234r24cr43tc5t43c25t345tc445tc345\\\"}"=>{",\\\"event_id\\\":5,\\\"time\\\":1233245432534,\\\"push_token\\\":\\\"huwneiorgyu2jc890t8092348c9057438t9c07345890ct78590347890\\\",\\\"loc\\\":\\\"23.43552;57.23525\\\"}"=>nil}}}
+{"{\"socials\":"=>{"{\"name\":\"vk\",\"token\":\"dewq4rc234r24cr43tc5t43c25t345tc445tc345\"}"=>{",\"event_id\":5,\"time\":1233245432534,\"push_token\":\"huwneiorgyu2jc890t8092348c9057438t9c07345890ct78590347890\",\"loc\":\"23.43552;57.23525\"}H"=>nil}}}
+{"{\"socials\":"=>{"{\"name\":\"vk\",\"token\":\"dewq4rc234r24cr43tc5t43c25t345tc445tc345\"}"=>{",\"event_id\":5,\"time\":1233245432534,\"push_token\":\"huwneiorgyu2jc890t8092348c9057438t9c07345890ct78590347890\",\"loc\":\"23.43552;57.23525\"}H"=>nil}}}
+{"{\"socials\":"=>{"{\"name\":\"vk\",\"token\":\"dewq4rc234r24cr43tc5t43c25t345tc445tc345\"}"=>{",\"event_id\":5,\"time\":1233245432534,\"push_token\":\"huwneiorgyu2jc890t8092348c9057438t9c07345890ct78590347890\",\"loc\":\"23.43552;57.23525\"}H"=>nil}}}
+{"{\\\"socials\\\":"=>{"{\\\"name\\\":\\\"vk\\\",\\\"token\\\":\\\"dewq4rc234r24cr43tc5t43c25t345tc445tc345\\\"}"=>{",\\\"event_id\\\":5,\\\"time\\\":1233245432534,\\\"push_token\\\":\\\"huwneiorgyu2jc890t8092348c9057438t9c07345890ct78590347890\\\",\\\"loc\\\":\\\"23.43552;57.23525\\\"}"=>nil}}}
+{"{\"socials\":"=>{"{\"name\":\"vk\",\"token\":\"dewq4rc234r24cr43tc5t43c25t345tc445tc345\"}"=>{",\"event_id\":5,\"time\":1233245432534,\"push_token\":\"huwneiorgyu2jc890t8092348c9057438t9c07345890ct78590347890\",\"loc\":\"23.43552;57.23525\"}H"=>nil}}}
+{"{\"socials\":"=>{"{\"name\":\"vk\",\"token\":\"dewq4rc234r24cr43tc5t43c25t345tc445tc345\"}"=>{",\"event_id\":5,\"time\":1233245432534,\"push_token\":\"huwneiorgyu2jc890t8092348c9057438t9c07345890ct78590347890\",\"loc\":\"23.43552;57.23525\"}H"=>nil}}}
+{"{\"socials\":"=>{"{\"name\":\"vk\",\"token\":\"dewq4rc234r24cr43tc5t43c25t345tc445tc345\"}"=>{",\"event_id\":5,\"time\":1233245432534,\"push_token\":\"huwneiorgyu2jc890t8092348c9057438t9c07345890ct78590347890\",\"loc\":\"23.43552;57.23525\"}"=>nil}}}
+{"{\"socials\":"=>{"{\"name\":\"vk\",\"token\":\"dewq4rc234r24cr43tc5t43c25t345tc445tc345\"}"=>{",\"event_id\":5,\"time\":1233245432534,\"push_token\":\"huwneiorgyu2jc890t8092348c9057438t9c07345890ct78590347890\",\"loc\":\"23.43552;57.23525\"}"=>nil}}}
+{"{\"socials\":"=>{"{\"name\":\"vk\",\"token\":\"dewq4rc234r24cr43tc5t43c25t345tc445tc345\"}"=>{",\"event_id\":5,\"time\":1233245432534,\"push_token\":\"huwneiorgyu2jc890t8092348c9057438t9c07345890ct78590347890\",\"loc\":\"23.43552;57.23525\"}"=>nil}}}
+{"{\"socials\":"=>{"{\"name\":\"vk\",\"token\":\"dewq4rc234r24cr43tc5t43c25t345tc445tc345\"}"=>{",\"event_id\":5,\"time\":1233245432534,\"push_token\":\"huwneiorgyu2jc890t8092348c9057438t9c07345890ct78590347890\",\"loc\":\"23.43552;57.23525\"}"=>nil}}}
+{"{\"socials\":"=>{"{\"name\":\"vk\",\"token\":\"dewq4rc234r24cr43tc5t43c25t345tc445tc345\"}"=>{",\"event_id\":5,\"time\":1233245432534,\"push_token\":\"huwneiorgyu2jc890t8092348c9057438t9c07345890ct78590347890\",\"loc\":\"23.43552;57.23525\"}"=>nil}}}
