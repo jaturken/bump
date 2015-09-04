@@ -40,7 +40,6 @@ class BumpProcessor
   end
 
   def search_cobump
-    binding.pry
     # TODO: send signal to worker to start searching cobump
   end
 end
