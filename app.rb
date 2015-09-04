@@ -17,14 +17,10 @@ post '/bump' do
   status 200
 end
 
-# returns last 10 lines of log
-get '/log' do
-  data = []
-  File.open("sent_data.log","r").each_line do |line|
-    data.unshift line
-    data.pop if data.size >= 10
-  end
-  data.join("<br>")
+get '/last_bump' do
+  bump = Bump.last
+  data = ['Last bump:', bump.values.to_s,  "Its socials:"] + bump.socials.map(&:values).map(&:to_s)
+  data.join("<br>\n")
 end
 
 get '*' do
