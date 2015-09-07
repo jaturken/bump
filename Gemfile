@@ -10,5 +10,4 @@ gem 'mysql2'
 group :development do
   gem 'pry'
   gem 'mina'
-
 end
