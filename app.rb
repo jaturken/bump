@@ -3,12 +3,21 @@ require 'sinatra/json'
 require './db.rb'
 require './models.rb'
 require './lib/bump_processor.rb'
+require 'airbrake'
+require './config/initializers/errbit'
 
 configure do
   set server: ['thin', 'webrick']
+  set :raise_errors, false
+  set :show_exceptions, false
+end
+
+error do
+  Airbrake.notify( env['sinatra.error'])
 end
 
 get '/' do
+  1/0
   json api: '0.1'
 end
 
