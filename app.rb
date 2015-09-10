@@ -17,7 +17,6 @@ error do
 end
 
 get '/' do
-  1/0
   json api: '0.1'
 end
 
