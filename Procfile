@@ -1,2 +1,2 @@
 api: bundle exec rackup -p 5001
-sidekiq: bundle exec sidekiq -C config/sidekiq.yml
+sidekiq: bundle exec sidekiq -C config/sidekiq.yml -r ./config/initializers/sidekiq.rb
