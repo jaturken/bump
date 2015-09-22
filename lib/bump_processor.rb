@@ -47,6 +47,6 @@ class BumpProcessor
   end
 
   def search_cobump
-    # TODO: send signal to worker to start searching cobump
+    CobumpFinder.perform_async(bump.id)
   end
 end

@@ -1,12 +1,13 @@
 class CobumpFinder
-  SECONDS = 10 # max time between bumps
-
   include Sidekiq::Worker
+  sidekiq_options :queue => :cobump
+
+  SECONDS = 10 # max time between bumps
 
   def perform(bump_id)
     bump = Bump[bump_id]
-    # cobump = find_cobump(bump)
-    # notify_devices(bump, cobump)
+    cobump = find_cobump(bump)
+    notify_devices(bump, cobump)
   end
 
   def find_cobump(bump)
@@ -25,5 +26,6 @@ class CobumpFinder
 
   # TODO: implement
   def notify_devices(bump, cobump)
+    PushSender.perform_async(bump.id, cobump.id)
   end
 end
