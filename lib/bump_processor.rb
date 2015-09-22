@@ -25,6 +25,7 @@ class BumpProcessor
       event_id: data['event_id'],
       time: data['time'],
       push_token: data['push_token'],
+      generate_code: data['generate_code'],
       latitude: latitude,
       longtitude: longtitude
     }
@@ -34,7 +35,13 @@ class BumpProcessor
   def save_socials
     DB.transaction do
       data['socials'].map do |social|
-        Social.create(bump_id: bump.id, name: social['name'], token: social['token'])
+        social_data = {
+          bump_id: bump.id,
+          name: social['name'],
+          token: social['token'],
+          profile_url: social['profile_url']
+        }
+        Social.create(social_data)
       end
     end
   end
