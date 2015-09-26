@@ -7,7 +7,7 @@ class PushSender
   def perform(bump_id, cobump_id)
     bumps = Bump.eager(:socials).where(id: [bump_id, cobump_id])
     bump = bumps.find{ |b| b.id == bump_id}
-    cobump = bumps.find{ |b| b.id == bump_id}
+    cobump = bumps.find{ |b| b.id == cobump_id}
 
     send_push(bump, cobump)
     send_push(cobump, bump)
