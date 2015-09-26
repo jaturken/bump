@@ -12,13 +12,14 @@ class CobumpFinder
 
   def find_cobump(bump)
     cobump_condition = <<-SQL
+      SELECT * FROM bumps WHERE
       latitude = #{bump.latitude} AND longtitude = #{bump.longtitude} AND
       (
         time > #{(bump.time - SECONDS * 1000)} OR
         created_at > #{bump.created_at - SECONDS}
       )
     SQL
-    Bump.fetch("select * from bumps where #{cobump_condition}").sort do |bump1, bump2|
+    Bump.fetch(cobump_condition).sort do |bump1, bump2|
       c1, c2 = bump1.created_at, bump2.created_at
       c1 == c2 ? bump1.time <=> bump2.time : c1 <=> c2
     end.first
