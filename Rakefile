@@ -1,6 +1,6 @@
 
 namespace :db do
-  require './db.rb'
+  require './config/initializers/db.rb'
   Sequel.extension :migration
 
   desc "Prints current schema version"
