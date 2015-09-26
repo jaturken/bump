@@ -9,6 +9,7 @@ gem 'mysql2'
 gem 'sidekiq'
 gem 'airbrake'
 gem 'rerun'
+gem 'pushmeup'
 
 group :development do
   gem 'pry'
