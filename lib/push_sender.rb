@@ -1,5 +1,7 @@
 class PushSender
   include Sidekiq::Worker
+  HOST = "https://android.googleapis.com/gcm/send"
+
   sidekiq_options :queue => :push
 
   def perform(bump_id, cobump_id)
@@ -20,6 +22,9 @@ class PushSender
       }
     end.compact.to_s
     data = { bump: { socials: socials, event_id: bump.event_id } }
-    GCM.send_notification( [bump.push_token], {data: data } )
+    Curl::Easy.http_post(HOST, data.to_json) do |curl|
+      curl.headers['Content-Type'] = 'application/json'
+      curl.headers['Authorization'] = 'key=AIzaSyCg-U8doNpny9_Uz89kqxqP-eRGzfa3nm0'
+    end
   end
 end
