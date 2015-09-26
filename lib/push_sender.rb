@@ -32,7 +32,6 @@ class PushSender
     c = Curl::Easy.http_post(HOST, data.to_json) do |curl|
       curl.headers['Content-Type'] = 'application/json'
       curl.headers['Authorization'] = 'key=AIzaSyCg-U8doNpny9_Uz89kqxqP-eRGzfa3nm0'
-      curl.verbose = true
     end
   end
 end
