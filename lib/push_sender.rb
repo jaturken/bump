@@ -29,7 +29,7 @@ class PushSender
       }.to_json,
       to: bump.push_token
     }
-    p data
+    puts data
     c = Curl::Easy.http_post(HOST, data) do |curl|
       curl.headers['Content-Type'] = 'application/json'
       curl.headers['Authorization'] = 'key=AIzaSyCg-U8doNpny9_Uz89kqxqP-eRGzfa3nm0'
