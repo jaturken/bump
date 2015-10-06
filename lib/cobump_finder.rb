@@ -14,6 +14,7 @@ class CobumpFinder
     cobump_condition = <<-SQL
       SELECT * FROM bumps WHERE
       latitude = #{bump.latitude} AND longtitude = #{bump.longtitude} AND
+      id != #{bump.id} AND
       (
         time > #{(bump.time - SECONDS * 1000)} OR
         created_at > '#{(bump.created_at - SECONDS).to_s[0..-6]}'
