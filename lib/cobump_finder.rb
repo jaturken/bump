@@ -19,6 +19,7 @@ class CobumpFinder
         created_at > #{(bump.created_at - SECONDS).to_s[0..-6]}
       )
     SQL
+    p cobump_condition
     Bump.fetch(cobump_condition).sort do |bump1, bump2|
       c1, c2 = bump1.created_at, bump2.created_at
       c1 == c2 ? bump1.time <=> bump2.time : c1 <=> c2

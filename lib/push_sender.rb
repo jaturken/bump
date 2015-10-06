@@ -25,7 +25,7 @@ class PushSender
       data: {
         bump: {
           socials: socials, event_id: bump.event_id
-        }
+        }.to_json
       },
       to: bump.push_token
     }
