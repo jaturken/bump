@@ -19,19 +19,18 @@ class PushSender
         name: social.name,
         token: social.token,
         profile_url: social.profile_url
-      }.to_json
+      }
     end.compact
-    raw_data = {
+    data = {
       data: {
         bump: {
           socials: socials, event_id: bump.event_id
-        }.to_json
-      }.to_json,
+        }
+      },
       to: bump.push_token
     }
-    data = raw_data.to_json.gsub("///", '/')
     puts data
-    c = Curl::Easy.http_post(HOST, data) do |curl|
+    c = Curl::Easy.http_post(HOST, data.to_json) do |curl|
       curl.headers['Content-Type'] = 'application/json'
       curl.headers['Authorization'] = 'key=AIzaSyCg-U8doNpny9_Uz89kqxqP-eRGzfa3nm0'
     end
