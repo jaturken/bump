@@ -7,7 +7,12 @@ class CobumpFinder
   def perform(bump_id)
     bump = Bump[bump_id]
     cobump = find_cobump(bump)
-    notify_devices(bump, cobump)
+    if cobump
+      p "Cobump found"
+      notify_devices(bump, cobump)
+    else
+      p 'Cobump not found'
+    end
   end
 
   def find_cobump(bump)
